@@ -1,0 +1,37 @@
+.showProfile{
+    background-color:#c4e7f566;
+   
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 17% 30% 53%;
+}
+.showProfile .rightSection {
+    border-right:5px solid white;
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 30px;
+     
+}
+.showProfile .rightSection img{
+    
+    width: 150px;
+    height: 150px;
+}
+.showProfile .leftSection{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.showProfile .leftSection .leftSectionContent div{
+    background-color: white;
+    margin: 20px;
+    margin-left: -70px;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}

@@ -1,0 +1,235 @@
+.profiles{
+    display: grid;
+    grid-template-columns: 20% 70%;
+    background-color: #ECEFF1;
+    height: 100%;
+    margin-top: -1px;
+  
+  }
+  .aside_nav {
+    background-color: #ffffff;
+    border-right-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: fit-content;
+    box-shadow: #1d1c1c 0px 5px 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+  
+  .aside_nav ul {
+    display: flex;
+    flex-direction: column;   
+    align-items: flex-start;
+    margin-left: 10px;
+    margin-top: 30px;
+    padding: 10px 0px;
+  }
+  
+  .aside_nav ul li {
+  
+    font-size: 18px;
+    text-align: start;
+   
+  }
+  
+  .aside_nav a {
+    position: relative;
+  
+  
+    display: flex;
+    flex-direction: row;
+  }
+  
+ 
+  .aside_nav a:hover {
+    color: hsl(202.67deg 53.82% 59.39%);
+  }
+  
+  .aside_nav ul li img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 20px;
+    margin-right: 10px;
+  }
+  
+  
+  .main-content{
+    overflow: hidden;
+  }
+  .profiles_content .profiles_search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .add{
+    position: relative;
+    left: 5%;
+    top: 15px;
+  }
+  .profiles_content input{
+    margin-top: 50px;
+    width: 40%;
+    height: 30px;
+    border-color: #ffffff;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: #767679 0px 5px 10px;
+    padding: 5px;
+}
+  .profiles_content input:hover{
+    box-shadow: #3838ac 0px 5px 10px;
+    pointer-events: stroke;
+  }
+  .profiles_content ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    
+  }
+  .profiles_content img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+  .profiles_content ul li{
+    background-color: white;
+    padding: 20px;
+    border: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    position: relative;
+    width: 75%;
+    height: 30px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: #696b6b 0px 5px 5px;
+    justify-content: space-between;
+    align-items: center;
+
+} 
+.profiles_content ul li div{
+  display: flex;
+  flex-direction: row;
+}
+
+  .profiles_content ul li p{
+     margin-top: -1px;
+     position: relative;
+     left: 10px;
+     top: 10px;
+  }
+  
+  .profiles_content ul li button{
+    padding: 10px;
+    width: 100px;
+    background-color:#D9D9D9 ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: #8c8d8d 0px 5px 5px;
+}
+  .profiles_content ul li button:hover {
+    background-color:hsl(202.67deg 53.82% 59.39%);
+    transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px) {
+   .profiles_content ul li{
+       width: 90%;
+   }
+   .profiles_content ul li button{
+    width: 90px;
+    padding: 10px 3px;
+
+   }
+   .profiles_content input{
+    width: 60%;
+   
+   }
+  }
+  @media screen and (min-width: 501px) and (max-width: 700px) {
+    .profiles_content ul li{
+      width: 90%;
+  }
+  .profiles_content ul li button{
+   width: 60px;
+   padding: 5px 3px;
+
+  }
+  .profiles_content input{
+   width: 60%;
+  
+  }
+  .profiles_content img{
+    width: 30px;
+    height: 30px;
+  }
+.profiles_content p{
+  font-size: 12px;
+}
+    .profiles_content .add{
+      width: 20px;
+    }
+  }
+  
+
+@media screen and (max-width: 500px) {
+  .profiles_content ul li{
+    width: 90%;
+}
+.profiles_content ul li button{
+ width: 60px;
+ height: 25px;
+ overflow: hidden;
+ padding: 5px 3px;
+
+}
+.profiles_content input{
+ width: 60%;
+
+}
+.profiles_content img{
+  width: 30px;
+  height: 30px;
+ 
+}
+.profiles_content p{
+font-size: 12px;
+}
+  .profiles_content .add{
+    width: 20px;
+    margin-top: 20px;
+  }
+}
+
+  

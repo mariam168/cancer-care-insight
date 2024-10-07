@@ -1,0 +1,13 @@
+body {
+  margin:0px;
+  padding: 0px;
+  font-family:initial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --mainColor: "hsl(202.67deg 53.82% 59.39%)"
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

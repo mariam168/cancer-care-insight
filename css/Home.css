@@ -1,0 +1,779 @@
+nav {
+    box-shadow: 0px 5px 15px rgb(19 3 231 / 10%);
+    position:sticky;
+    top:0px;
+    background-color: white;
+    z-index: 1000;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+   justify-content: space-around;
+
+  }
+  nav .threeDots{
+    display: none;
+  }
+  nav .threeDotsImage{
+    width: 50px;
+    height: 50px;
+  }
+  nav .links{
+    margin-left: 40%;
+  }
+  ul {
+    list-style-type: none;
+    width: 100%;
+     margin: 0ch;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+   
+   
+  }
+  
+  li {
+    margin-right: 5px;
+  
+  }
+  
+  a {
+   
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  nav a:hover{
+    color:hsl(202.67deg 53.82% 59.39%) ;
+  }
+  
+   nav button {
+    width: 85px;
+    height: 28px;
+    color: white;
+    border: hsla(0, 0%, 100%, 0.596) solid 2px;
+    background-color: hsl(202.67deg 53.82% 59.39%);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+  
+  nav button:hover {
+    color: hsl(202.67deg 53.82% 59.39%);
+    border-color: hsl(202.67deg 53.82% 59.39%);
+    background-color: white;
+  }
+  
+  .logo {
+    position: relative;
+    width: 170px;
+    height: 150px;
+    overflow: hidden;
+    margin-top: 70px;
+    margin-left: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 10px rgb(19 3 231 / 10%);
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    z-index: 1001;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+  
+  .logo::before {
+    content: '';
+    position: absolute;
+    
+    left: 0;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    background-color: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+    
+  }
+  
+  .logoImage {
+    width: 140%;
+    height: 100%;
+    position: relative;
+    top: -15px;
+    left:-25px;
+    z-index: 2;
+    transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    z-index: 1001;
+}
+  .logoImage:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.homeBackground{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+   margin-top: 25px;
+  background-color: #ECEFF1;
+  height: 420px;
+
+}
+.backgroundPar h1{
+   font-size: 40px;
+   color: black;
+   margin-top: -5px;
+   box-shadow: 0px 5px 3px 3px rgb(179, 176, 176);
+   background-color: white;
+   padding: 5px 10px;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+}
+.backgroundPar h3{
+  color: hsl(202.67deg 53.82% 59.39%);
+  font-weight: bolder;
+  margin-top: -5px;
+  box-shadow: 0px 5px 3px 3px rgb(179, 176, 176);
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  width: fit-content;
+}
+.homeBackground div{
+  margin-top: -50px;
+}
+
+.homeBackgroundImage{
+  background-color: white;
+  width: 250px;
+  height: 250px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -ms-border-radius:50%;
+  -o-border-radius:50%;
+  box-shadow: 0px 0px 3px 3px rgb(134, 133, 133);
+  margin-left: -10%;
+  -webkit-border-radius:50%;
+}
+.homeBackgroundImage img{
+  margin-top: -20%;
+  margin-left: -7%;
+  animation: topBottom 5s infinite linear;
+  -webkit-animation: topBottom 5s infinite linear;
+}
+@keyframes topBottom {
+   0%{
+    margin-top: -20%;
+   }
+  50%{
+    margin-top: -30%;
+  }
+  100%{
+    margin-top: -20%;
+  }
+}
+
+.models{
+   
+    width: 80%;
+    display: flex;
+    margin-left: 10%;
+    margin-top: -5.3%;
+    
+
+}
+
+.modelsContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+
+.modelsContent div{
+    width: 500px;
+    height: 150px;
+    box-shadow: 0px 0px 3px 3px rgb(197, 195, 195);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin: 10px 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.modelsContent div a{
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+}
+.modelsContent div:hover{
+  background-color:#ECEFF1 ;
+  border-color: hsl(202.67deg 53.82% 59.39%) ;
+}
+.modelsContent h2{
+    
+    font-size: 30px;
+  }
+  .modelsContent img{
+    width: 120px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: -30px;
+    margin-left: 20px;
+    border: 3px solid hsl(203, 23%, 40%);
+} 
+.dashboard{
+    height: 300px;
+    background-color: #ECEFF1;
+    margin-top: 90px;
+    width: 100%;
+
+    height: 320px;
+    box-shadow: 0px 0px 3px 3px rgb(204, 203, 203);
+
+}
+.dashboard h2{
+    text-align: center;
+    position: relative;
+    top:20px;
+    font-size: 30px;
+   
+}
+.dashboard p{
+    margin-top: 90px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.dashboard img{
+    margin-left: 70%;
+    position: relative;
+    top:-240px;
+    width: 350px;
+    height: 350px;
+   
+}
+.dashboard button{
+   position: relative;
+   top:-325px;
+   left:47%;
+   border-color: transparent;
+   color: white;
+   padding: 10px 25px;
+   background-color: hsl(202.67deg 53.82% 59.39%);
+   border-radius: 3px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   -ms-border-radius: 3px;
+   -o-border-radius: 3px;
+   transition: all 0.3s ease;
+   -webkit-transition: all 0.3s ease;
+   -moz-transition: all 0.3s ease;
+   -ms-transition: all 0.3s ease;
+   -o-transition: all 0.3s ease;
+   box-shadow: 0px 3px 3px 3px rgb(177, 174, 174);
+}
+.dashboard button:hover{
+  background-color: white;
+  border-color: hsl(202.67deg 53.82% 59.39%) ;
+  color: hsl(202.67deg 53.82% 59.39%) ;
+ 
+}
+.doctors_section{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 90px;
+    margin-bottom: -30px;
+    height: 100vh;
+    width: 100%;
+    
+  }
+  .doctors{
+      margin-top: 80px;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+  }
+ 
+
+  .doctors div{
+      width: 15.3%;
+      height: 200px;
+      
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .doctors div img{
+      align-items: center;
+      width: 100%;
+      height: 160px;
+  }
+  
+  .doctors div p{
+    margin-top: 1%;
+    margin-left: 2%;
+    
+  }
+  
+  .doctors div:hover{
+   background-color:#ECEFF1 ;
+   cursor: pointer;
+  
+  }
+ 
+  .show .hor1{
+    height: 150px;
+    width: 2px;
+    background-color: black;
+    position: relative;
+    top: -100px;
+    left: 40px;
+}
+.show .hor2{
+    height: 150px;
+    width: 2px;
+    background-color: black;
+    position: relative;
+    left: 96%;
+    top:-283px;
+}
+
+.show .ver1{
+    height: 2px;
+    width: 40%;
+    background-color: black;
+    position: relative;
+    top:-100px;
+    left: 40px;
+}
+.show button{
+   position: relative;
+   left: 47%;
+   top:-119px;
+   padding: 10px 25px;
+   border-color: transparent;
+   color: white;
+   background-color: hsl(202.67deg 53.82% 59.39%);
+   border-radius: 3px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   -ms-border-radius: 3px;
+   -o-border-radius: 3px;
+   transition: all 0.3s ease;
+   -webkit-transition:;
+   -moz-transition:;
+   -ms-transition:;
+   -o-transition:;
+   box-shadow: 0px 3px 3px 3px rgb(177, 174, 174);
+}
+.show :hover{
+  color:hsl(202.67deg 53.82% 59.39%);
+  background-color: white; ;
+  border-color: hsl(202.67deg 53.82% 59.39%) ;
+
+}
+.show .ver2{
+    height: 2px;
+    width: 499px;
+    background-color: black;
+    position: relative;
+    top:-133px;
+    left: 59%;
+}
+.patients{
+    height: 270px;
+    background-color: #ECEFF1;
+    margin-top: -200px;
+    width: 100%;
+   
+}
+.patients h2{
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top:20px;
+}
+
+.patients p{
+    position: relative;
+    top:40px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.patients img{
+    position: relative;
+    left: 76%;
+    top:-100px;
+    height: 230px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 0px 0px 3px 3px rgb(167, 166, 166);
+}
+.patients button{
+   position: relative;
+   top:-130px;
+   left: 29%;
+   padding: 10px 25px;
+   border-color: transparent;
+   color: white;
+   background-color:hsl(202.67deg 53.82% 59.39%) ;
+   border-radius: 3px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   -ms-border-radius: 3px;
+   -o-border-radius: 3px;
+   transition:all 0.3s ease;
+   -webkit-transition:all 0.3s ease;
+   -moz-transition:all 0.3s ease;
+   -ms-transition:all 0.3s ease;
+   -o-transition:all 0.3s ease;
+   box-shadow: 0px 3px 3px 3px rgb(177, 174, 174);
+   
+}
+.patients button:hover{
+   background-color: white;
+   color: hsl(202.67deg 53.82% 59.39%) ;
+   border-color: hsl(202.67deg 53.82% 59.39%) ;
+}
+.geographicalMapping {
+    margin-top: 70px;
+    width: 100%;
+  }
+  .geographicalMapping h2{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left:  30px;
+  }
+  .footer ul{
+    display: flex;
+  
+  }
+  
+  .footer {
+    background-color: hsl(203, 23%, 40%);
+    margin-top: 50px;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer img {
+    width: 300px;
+    height: 100px; 
+    margin-top: -20px;
+  }
+  @media only screen and (max-width: 500px)  {
+    nav ul{
+      display: none;
+    }
+    nav .threeDots{
+      display: inline;
+      margin-left: 5%;
+      margin-top: -2%;
+    }
+  }
+
+  @media only screen and (max-width: 900px){
+   nav .threeDots{
+    display: inline;
+   }
+   nav .logoUl{
+    display: none;
+   }
+   nav .links{
+    display: none;
+   }
+   nav ul .navButtons{
+    display: block;
+   }
+  }
+  @media only screen and (max-width: 500px){
+       .homeBackground{
+        width: 100%;
+         height: 40%;
+         background-position-y:0;
+         margin-left: 2%;
+       }
+      .models h1{
+        font-size: 20px;
+      }
+      .models div{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        height: 50%;
+        justify-content: center;
+        
+      }
+      .models div h2{
+        font-size: 20px;
+      }
+      .models div img{
+        width: 20%;
+        height: 15%;
+        padding: 10% 20%;
+        margin-left: 50%;
+       
+        
+      }
+      .models div p{
+        display: none;
+      }
+      
+      .dashboard h2{
+        font-size: 20px;
+        margin-left: -20%;
+        
+      }
+      .dashboard p{
+         font-size: 13px;
+      } 
+      .dashboard img{
+       display: none;
+      }
+        
+      
+      .dashboard button{
+  
+        position: relative;
+        top: 10%;
+        left: 30%;
+       
+      } 
+      .show{
+        display: none;
+      }
+      .doctorButton{
+        display: inline;
+      }
+    
+      .doctors{
+        display: none;
+      }
+      .doctors_section {
+        font-size: 16px;
+      }
+      .homeDoctor{
+        position: relative;
+        top: -550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .homeDoctor img{
+        background-color: hsl(202.67deg 53.82% 59.39%);
+        border-radius: 50%;
+        -webkit-border-radius:;
+        -moz-border-radius:;
+        -ms-border-radius:;
+        -o-border-radius:;
+}
+      .homeDoctor button{
+        background-color: hsl(202.67deg 53.82% 59.39%);
+        height: 50px;
+        padding: 0px 30px;
+        margin: 5% 0px;
+        color: white;
+        border-radius: 5px;
+        border-color: hsl(202.67deg 53.82% 59.39%);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
+      .patients{
+        margin-top: -500px;
+      }
+      .patients img{
+        display: none;
+      }
+      .patients h2{
+        font-size: 18px;
+      }
+      .patients p{
+        font-size: 15px;
+      }
+      .patients button{
+        margin-top: 53%;
+      }
+      .geographicalMapping{
+           width: 100%;
+           display: none;
+      }
+      
+      .footer  img{
+        display: none;
+      }
+  }
+  @media only screen and (min-width: 501px) and (max-width: 700px){
+           .homeBackground{
+           width: 100%;
+           
+          }
+           .backgroundPar h1{
+            font-size: 18px;
+           }
+           .backgroundPar h3{
+            font-size: 15px;
+           }
+           
+           .models h1{
+            font-size: 22px;
+           }
+           .models div{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+
+           
+           }
+           .models div p{
+           font-size: 20px;
+          }
+          .models h2{
+          text-align: start;
+          margin-left: -60%;
+          font-size:23px;
+          margin-top: -30px;
+          }
+          .models img{
+            width: 120px;
+            height: 100px;
+           
+          }
+          .models p{
+            font-size: 5px;
+            margin-top: 5px;
+          }
+          .dashboard img{
+            display: none;
+          }
+          .dashboard button{
+            margin-top: 30%;
+          }
+          .show{
+            display: none;
+          }
+          .doctors{
+             display: none;
+          }
+          .homeDoctor{
+            margin-top: -500px;
+            display: flex;
+            flex-direction: column;
+          }
+          .homeDoctor img{
+            background-color: hsl(202.67deg 53.82% 59.39%);
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+}
+          .homeDoctor button{
+            background-color: hsl(202.67deg 53.82% 59.39%);
+        height: 50px;
+        padding: 0px 30px;
+        margin: 5% 0px;
+        color: white;
+        border-radius: 5px;
+        border-color: hsl(202.67deg 53.82% 59.39%);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+      
+          }
+          .patients{
+            margin-top: 20%;
+          }
+          .patients img{
+            display: none;
+          }
+          .patients button{
+            margin-top: 30%;
+            margin-left: 10%;
+          }
+  }
+  @media only screen and (min-width:701px) and ( max-width: 850px){
+    .homeDoctor{
+      display: none;
+    }
+    .homeBackground{
+      width: 100%;
+    }
+    .models div{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    }
+    .models h2{
+      margin-left: -45%;
+    }
+    .doctors div{
+      height: 220px;
+    }
+    .hor1,.hor2,.ver1,.ver2{
+      visibility: hidden;
+    }
+    .patients img{
+      visibility: hidden;
+    }
+    
+  }
+  @media only screen and (min-width:851px){
+    .homeDoctor{
+      display: none;
+    }
+    .homeBackground{
+      width: 100%;
+    }
+  }

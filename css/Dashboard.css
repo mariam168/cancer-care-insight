@@ -1,0 +1,181 @@
+
+  
+  .Dashboard{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: #ECEFF1;
+  }
+  .dashboardContent .charts{ 
+    display: flex;
+    justify-content: space-evenly;
+   
+  }
+  .charts div{
+    width: 30%;
+    height: 200px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0px 30px 20px rgb(19 3 231 / 10%);
+  }
+  .dashboardContent h1{
+      text-align: center;
+      margin-top: 40px;
+  }
+  .therapy{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 80px;
+    flex-wrap: wrap;
+  }
+  .therapy .rectangle {
+    height: 250px;
+    width:25%;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0px 30px 20px rgb(19 3 231 / 10%);
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-top: -25px;
+}
+  .therapy h3{
+    position: relative;
+    left:  -50px;
+  }
+  .therapy h2{
+    color: #353434;
+    position: relative;
+    top:-120px;
+    text-align: center;
+    left: 20px;
+  }
+  .hormone,.target,.chemical{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0px 30px;
+}
+  .hormone{
+    background-color: #c521a4;
+  }
+  .hormone:before,
+  .chemical:before,
+  .target:before {
+    content: "";
+    position: absolute;
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    border: 10px solid transparent;
+    border-radius: 50%;
+    background-color: white;
+    
+    
+  }
+  @keyframes riseAnimation {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+      -webkit-transform: translateY(100px);
+      -moz-transform: translateY(100px);
+      -ms-transform: translateY(100px);
+      -o-transform: translateY(100px);
+  }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+}
+  }
+  
+  .hormone,
+  .chemical,
+  .target {
+    animation: riseAnimation 2s ease-in-out forwards;
+    -webkit-animation: riseAnimation 2s ease-in-out forwards;
+  }
+  
+  @media only screen and (max-width: 550px) {
+    .aside_nav ul li h3 {
+      display: none;
+    }
+    .aside_nav ul li img {
+      width: 100%;
+      padding: 15px 0px;
+    }
+    .Dashboard h1 {
+      font-size: 23px;
+    }
+    .charts {
+      display: flex;
+      flex-direction: column;
+      margin: 10px 0px;
+     
+      align-items: center;
+    }
+  
+    .charts div {
+      width: 70%;
+      margin-top: 30px;
+    }
+    .therapy {
+      flex-direction: column;
+      align-items: center;
+    }
+    .therapy .rectangle {
+      margin-top: 30px;
+      width: 70%;
+    }
+  }
+  
+  @media only screen and (min-width: 550px) and (max-width: 900px) {
+    
+    .aside_nav ul li h3 {
+      display: none;
+    }
+    
+    
+    .aside_nav ul li img {
+      width: 100%;
+      padding: 15px 0px;
+    }
+    .Dashboard h1 {
+      font-size: 23px;
+    }
+    .therapy .rectangle {
+    
+      width: 31%;
+      
+    }
+  }
+  
+  

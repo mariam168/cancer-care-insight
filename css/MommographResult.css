@@ -1,0 +1,72 @@
+.mammographResult{
+    background-color: #ECEFF1;
+    height: 550px;
+    width: 38%;
+    margin-left: 32%;
+    margin-top: 3%;
+    
+}
+.mammographResult h1{
+    text-align: center;
+    position: relative;
+    top:35px;
+}
+.mammographResult p{
+    font-size: 20px;
+    position: relative;
+    top: 60px;
+    left: 50px;
+}
+.mammographResult img{
+    position: relative;
+    top:16%;
+    left: 50px;
+    width: 80%;
+}
+@media screen and (max-width: 600px) {
+    .mammographResult{
+        width: 60%;
+        margin-left: 13%;
+        height: 400px;
+        margin-top: 20%;
+    }
+    .mammographResult h1{
+        font-size: 20px;
+    } 
+    .mammographResult p{
+        font-size: 15px;
+    }
+    .mammographResult img{
+        margin-top: 15%;
+        margin-left: -5%;
+    }
+    
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .mammographResult{
+        width: 60%;
+        margin-left: 13%;
+    }
+    .mammographResult h1{
+        font-size: 25px;
+    } 
+    .mammographResult p{
+        font-size: 20px;
+    }
+    .mammographResult img{
+        margin-top: 15%;
+    }
+    
+}
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+    .mammographResult{
+        width: 50%;
+        margin-left: 25%;
+    }
+    .mammographResult h1{
+        font-size: 25px;
+    } 
+    .mammographResult img{
+        margin-top: 10%;
+    }
+}
