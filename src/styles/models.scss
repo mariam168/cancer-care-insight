@@ -1,0 +1,97 @@
+$primary-color: hsl(202.67deg 53.82% 59.39%);
+$light-gray: rgb(163, 154, 154);
+$dark-gray: rgb(100, 99, 99);
+$light-bg: #ECEFF1;
+
+.modelPage {
+  background-color: $light-bg;
+  padding: 2rem;
+  width: 45%;
+  margin: 3rem auto;
+  box-shadow: 0 0.125rem 0.25rem rgba(158, 157, 157, 0.7);
+  border-radius: 0.5rem;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .drag {
+    height: 15rem;
+    background-color: white;
+    margin: 1rem auto;
+    box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+  }
+
+  .modelPageContent {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .pathologyModel {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        margin-bottom: 0.5rem;
+      }
+
+      input[type="number"] {
+        padding: 0.5rem;
+        border: 1px solid $light-gray;
+        border-radius: 0.25rem;
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  .upload_img {
+    max-width: 30%;
+    margin-bottom: 1rem;
+  }
+
+  .dropped-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img {
+      width: 15rem;
+      height: 10rem;
+      margin: 1rem;
+    }
+  }
+
+  button[type="submit"] {
+    width: 74%;
+    height: 2.5rem;
+    background-color: white;
+    border: none;
+    box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.7);
+    border-radius: 0.3125rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 2rem auto;
+    display: block;
+
+    &:hover {
+      background-color: $primary-color;
+      color: white;
+    }
+  }
+
+}

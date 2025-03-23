@@ -1,0 +1,40 @@
+$primary-color: rgb(126, 118, 118);
+$text-shadow: 0 0.3125rem 0.3125rem rgb(49, 108, 167);
+$background-opacity: rgba(255, 255, 255, 0.692);
+
+.AboutUs {
+  background-image: url('../Assets/AboutUsImage.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .AboutUsContent {
+    background-color: $background-opacity;
+    width: 80%;
+    max-width: 700px;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 0.5rem;
+
+    h1 {
+      margin-bottom: 2rem;
+      color: $primary-color;
+      text-shadow: $text-shadow;
+    }
+
+    h2 {
+      color: $primary-color;
+      text-shadow: $text-shadow;
+      margin-top: 1.5rem;
+    }
+
+    h4 {
+      color: black;
+      margin-top: 1rem;
+    }
+  }
+}

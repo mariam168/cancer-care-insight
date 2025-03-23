@@ -1,0 +1,141 @@
+$primary-color: hsl(202.67deg 53.82% 59.39%);
+$light-gray: rgb(163, 154, 154);
+$light-bg: #ECEFF1;
+
+.profiles {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  background-color: $light-bg;
+  min-height: 100vh;
+  margin-top: -1px;
+
+  .aside_nav {
+    background-color: white;
+    border-right: 1px solid #ddd;
+    border-radius: 0.3125rem;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: fit-content;
+    box-shadow: 0 0.3125rem 0.625rem rgba(29, 28, 28, 0.5);
+
+    ul {
+      list-style: none;
+      padding: 1rem 0;
+      margin: 2rem 0 0 1rem;
+      display: flex;
+      flex-direction: column;
+
+      li {
+        a {
+          display: flex;
+          align-items: center;
+          padding: 0.75rem 0;
+          text-decoration: none;
+          color: #333;
+
+          img {
+            width: 1.875rem;
+            height: 1.875rem;
+            margin-right: 0.625rem;
+          }
+
+          h3 {
+            margin: 0;
+          }
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  .profiles_content {
+    padding: 2rem;
+
+    .profiles_search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+
+      input[type="text"] {
+        width: 40%;
+        padding: 0.5rem;
+        border: 1px solid #ddd;
+        border-radius: 1.25rem;
+        box-shadow: 0 0.3125rem 0.625rem rgba(118, 118, 121, 0.5);
+
+        &:hover {
+          box-shadow: 0 0.3125rem 0.625rem rgba(56, 56, 172, 0.5);
+        }
+      }
+
+      .add {
+        position: relative;
+        left: 5%;
+        top: 0.9375rem;
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      li {
+        background-color: white;
+        padding: 1.25rem;
+        margin: 0.625rem;
+        width: 75%;
+        border-radius: 1.25rem;
+        box-shadow: 0 0.3125rem 0.3125rem rgba(105, 107, 107, 0.5);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 3.125rem;
+            height: 3.125rem;
+            border-radius: 50%;
+            margin-right: 0.625rem;
+          }
+
+          p {
+            margin: 0;
+          }
+        }
+
+        .profilesButtons {
+          display: flex;
+
+          button {
+            padding: 0.625rem 1.25rem;
+            background-color: #D9D9D9;
+            color: black;
+            border: none;
+            border-radius: 0.3125rem;
+            cursor: pointer;
+            margin: 0 0.3125rem;
+            box-shadow: 0 0.3125rem 0.3125rem rgba(140, 141, 141, 0.5);
+
+            &:hover {
+              background-color: $primary-color;
+              color: white;
+              transition: background-color 0.3s ease;
+            }
+          }
+        }
+      }
+    }
+  }
+}

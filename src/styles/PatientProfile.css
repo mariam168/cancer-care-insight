@@ -1,0 +1,219 @@
+.patientProfile {
+    display: grid;
+    grid-template-columns: 20% 70%; 
+    background-color: #ECEFF1;
+    height: 100vh;
+
+    
+  }
+ .patientProfileContent{
+  display: grid;
+  grid-template-columns: 30% 70%;
+ }
+
+ 
+  .profileInput{
+    display: none;
+  }
+  .patientProfileImage img {
+    width: 50%;
+    height: 50%;
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+
+  .patientContactDetails{
+    margin: -30px 0px;
+  
+  }
+  .patientContactDetails ul{
+     display: flex;
+     flex-direction: column;
+  }
+  .patientContactDetails ul li{
+    list-style: none;
+    margin: 2px 0px;
+}
+  .patientContactDetails input{
+    width: 283px;
+    padding: 7px 0px;
+    border-color: #ECEFF1;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+  
+  .patientLapResult{
+    background-color: white;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+    width: 100%;
+    height: 20%;
+    margin-top: 30px;
+}
+  .patientLapResult h4{
+    margin-left: 20px; 
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding-top: 10px;
+  }
+  .patientLapResult img{
+    height: 30px;
+    width: 30px;
+    margin-left: -10px;
+    
+  } 
+   .patientLapResult ul {
+    display: flex;
+    flex-direction: column; 
+     margin-top: 8px;
+
+  }
+  
+  .patientLapResult input{
+    width: 200px;
+    background-color: #D9D9D9;
+    margin-left: 15px;
+    margin-top: -10px;
+  }
+   
+  
+/*   
+  .patientDoctorNotes {
+    background-color: #ffffff;
+    border-radius: 5%;
+    margin: 10px 10px;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+    width: 290px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-left: -2px;
+}  */
+  .patientDoctorNotes h4{
+    margin-left: 30px;
+    margin-top: 5px;
+    margin-bottom: -1px;
+  } 
+   .patientDoctorNotes textarea{
+    width: 250px;
+    margin-left: 20px;
+    margin-top: 2px;
+    box-shadow:  0px 0px 5px rgba(0, 0, 0, 0.5);
+  } 
+  .patientDoctorNotes .write_notes{
+    height: 70px;
+  } 
+   .patientDoctorNotes .doctor_name{
+    position: relative;
+    height: 30px;
+    top:8px
+  }
+  .overviewHistory{
+    display: flex;
+    flex-direction: column;
+    
+  
+  }
+  .patientOverview{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 5px 3px 3px rgb(201, 200, 200);
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 110%;
+  }
+  .patientOverview img{
+    height: 200px;
+  }
+  .patientOverview textarea{
+    background-color: #ECEFF1;
+    margin:10px 0px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    width: 80%;
+    padding: 7px;
+    margin-left: -50px;
+}
+  .history {
+    display: flex;
+    flex-direction: column;
+    width: 110%;
+    background-color: white;
+   
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 30px;
+    box-shadow: 0px 5px 3px 3px rgb(201, 200, 200);
+}
+  
+  .history h2 {
+    position: relative;
+    top: 10px;
+    left: 40px;
+  }
+  
+  .history button {
+    width: 90%;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-color: transparent;
+    box-shadow: #5b5d5e 0 5px 5px;
+    transition: height 0.3s ease;
+    -webkit-transition: height 0.3s ease;
+    -moz-transition: height 0.3s ease;
+    -ms-transition: height 0.3s ease;
+    -o-transition: height 0.3s ease;
+  }
+  
+  .history textarea {
+    width: 89%;
+    height: 100px;
+    margin-left: 30px;
+    border-color: transparent;
+    box-shadow: #5b5d5e 0 5px 5px;
+  }
+  
+  .patientProfile.history-open .history button {
+    height: 0;
+    visibility: hidden;
+    display: none;
+    transition: height 0.3s ease;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
+}
+  
+  .patientProfile.history-open .history button.opened {
+    height: 40px;
+    visibility: visible;
+    display: block;
+  }
+  
+   .history h3{
+    
+    margin-bottom: -15px;
+    margin-left: 22px;
+   }
+  

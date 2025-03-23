@@ -1,0 +1,40 @@
+$primary-color: #4c6fa3;
+$header-height: 80px;
+
+.header {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding: 5px 0;
+  height: $header-height; 
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logoImage {
+  width: 190px;
+  height: auto;
+}
+
+.buttonPrimary {
+  padding: 5px 10px;
+  font-size: 14px;
+  height: 32px;
+  width: 90px;
+  color: white;
+  background-color: $primary-color !important;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  border: none; 
+
+  &:hover {
+    color: $primary-color !important;
+    background-color: white !important;
+    border: 2px solid $primary-color !important;
+  }
+}

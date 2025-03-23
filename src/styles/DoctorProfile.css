@@ -1,0 +1,157 @@
+ .doctorProfile{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: #ECEFF1;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .DoctorInformation{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: #ECEFF1;
+
+    
+    
+  }
+  .section{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid white;
+    border-color: transparent;
+    border-right-color:white ;
+
+  }
+  .doctorpreview {
+    width: 160px;
+    height: 170px;
+    border: 2px solid #ECEFF1;
+    margin-top: 50px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .profileInput{
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 90px;
+  }
+  .contact_details{
+    margin-top: 20px;
+  }
+  .contact_details ul{
+    display: flex;
+    flex-direction: column;
+    margin-left: -50px;
+  }
+  .contact_details ul li{
+    margin-bottom: 7px;
+  }
+  .contact_details img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+
+   
+  }
+  
+ 
+  .DoctorInformation input{
+    padding: 10px;
+    background-color:white;
+    border-color: rgba(121, 118, 118, 0.082);
+    width: 190px;
+    box-shadow: #a9acb1 0px 3px 3px;
+    
+  }
+ .edu_exp{
+ 
+  height: 100vh;
+ }
+  .edu_exp div{
+    margin: 40px;
+    padding: 10px;
+    
+  }
+  .doctorName{
+    background-color:#ECEFF1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top: -30px;
+  }
+
+  .doctorName input{
+    height: 20px;
+    border-color: #ECEFF1;
+    background-color: white;
+   
+    width: 300px;
+    margin-left: 10px;
+  }
+  .experience{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: white;
+    height: 180px;
+    border-radius: 20px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+    box-shadow: #7991c0 0px 5px 5px;
+    position: relative;
+    top: -70px;
+}
+  .experience h3{
+    margin-top: -10px;
+    margin-left: 10px;
+  }
+  .experience textarea{
+    
+    height: 150px;
+    width: 630px;
+    background-color: #ECEFF1;
+    border-color: transparent;
+    box-shadow: #a9acb1 0px 5px 5px;
+    margin-top: -10px;
+    margin-left: 10px;
+  }
+  .education{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: white;
+    height: 190px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: #7991c0 0px 5px 5px;
+    position: relative;
+    top: -100px;
+}
+  .education h3{
+    margin-left: 20px;
+    margin-bottom: 2px;
+    margin-top: -5px;
+    
+  }
+  .education textarea{
+    height: 160px;
+    width: 630px;
+    background-color: #ECEFF1;
+    border-color: transparent;
+    box-shadow: #9da0a5 0px 5px 5px;
+    margin-left: 18px;
+
+  }      
+  .edu_exp button{
+    position: relative;
+    top: -120px;
+    left: 600px;
+    padding: 10px 20px;
+    background-color: #7991c0;
+    color: white;
+    border-color: transparent
+    ;
+  }

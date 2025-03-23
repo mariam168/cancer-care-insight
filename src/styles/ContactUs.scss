@@ -1,0 +1,48 @@
+$light-bg: #ECEFF1;
+
+.ContactUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+  h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .ContactUsContent {
+    background-color: $light-bg;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; // Adjust as needed
+    padding: 1rem;
+
+    a,
+    div {
+      background-color: white;
+      width: 250px;
+      height: 235px;
+      margin: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none; // Remove default link styling
+
+      img {
+        width: 200px;
+        height: 170px;
+        margin-top: 1rem;
+      }
+
+      h3 {
+        margin: 0.5rem 0;
+        color: black;
+      }
+    }
+  }
+}
