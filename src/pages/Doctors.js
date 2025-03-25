@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import axios from 'axios';
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import add from '../Assets/add.png';
 import home_icon from '../Assets/home_icon.png';
@@ -9,47 +8,13 @@ import pathology_icon from '../Assets/pathology_icon.png';
 import patient_icon from '../Assets/patient_icon.png';
 import doctor_icon from '../Assets/doctor_icon.png';
 import profile2 from '../Assets/profile2.jpg';
-import '../styles/Profiles.scss'
+import '../styles/Profiles.scss';
+import doctorsData from './Data'; // استيراد البيانات من Data.js
 
 const Users = () => {
   const [searchQuery, setSearchQuery] = useState("");
-  const [doctors, setDoctors] = useState([]);
-  const [error, setError] = useState(null);
-  const [token, setToken] = useState(null);
+  const [doctors, setDoctors] = useState(doctorsData); // استخدام البيانات المستوردة
 
-  useEffect(() => {
-    const storedToken = sessionStorage.getItem('token');
-    if (storedToken) {
-      setToken(storedToken);
-    } else {
-      console.error('Authentication token not found.');
-    }
-  }, []);
-
-  useEffect(() => {
-    const fetchDoctors = async () => {
-      if (!token) return;
-      try {
-        const response = await axios.get('https://cancer.codexa.codes/api/admin/all-doctors', {
-          headers: {
-            'Accept': 'application/json',
-            'Authorization': `Bearer ${token}`,
-          }
-        });
-        if (Array.isArray(response.data.data.doctors)) {
-          setDoctors(response.data.data.doctors);
-        } else {
-          console.error('API response does not contain an array of doctors:', response.data);
-          setError('API response does not contain an array of doctors');
-        }
-      } catch (error) {
-        setError('Error fetching doctors');
-        console.error('Error fetching doctors:', error);
-      }
-    };
-
-    fetchDoctors();
-  }, [token]); 
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
   };
@@ -113,24 +78,20 @@ const Users = () => {
           </Link>
         </div>
         <ul>
-          {error ? (
-            <p style={{ color: 'red' }}>{error}</p>
-          ) : (
-            filteredData.map((doctor) => (
-              <li key={doctor.id}>
-                <div>
-                  <img src={doctor.image || profile2} alt="Profile" />
-                  <p>{doctor.name}</p>
-                </div>
-                <div className="profilesButtons">
-                  <Link to={`/ShowDoctor/${doctor.id}`}>
-                    <button>View Profile</button>
-                  </Link>
-                  <button>Delete</button>
-                </div>
-              </li>
-            ))
-          )}
+          {filteredData.map((doctor) => (
+            <li key={doctor.id}>
+              <div>
+                <img src={doctor.image || profile2} alt="Profile" />
+                <p>{doctor.name}</p>
+              </div>
+              <div className="profilesButtons">
+                <Link to={`/ShowDoctor/${doctor.id}`}>
+                  <button>View Profile</button>
+                </Link>
+                <button>Delete</button>
+              </div>
+            </li>
+          ))}
         </ul>
       </div>
     </div>

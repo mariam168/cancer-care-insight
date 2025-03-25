@@ -1,6 +1,4 @@
-export default 
-
-[
+const doctorsData =[
     {
       "id": 1,
       "name": "Leanne Graham",
@@ -236,3 +234,4 @@ export default
       }
     }
   ]
+  export default doctorsData;

@@ -1,0 +1,42 @@
+
+.aside_nav {
+    background-color: white;
+   
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      @media (max-width: 768px) {
+        width: 10%;
+      }
+
+      li {
+        a {
+          display: flex;
+          align-items: center;
+          padding: 0.8rem;
+          text-decoration: none;
+          color: #333;
+
+          img {
+            width: 1.5rem;
+            margin-right: 0.5rem;
+          }
+
+          h3 {
+            margin: 0;
+            font-size: 1rem;
+            @media (max-width: 768px) {
+              display: none; 
+              
+            }
+          }
+
+          &:hover {
+            background-color: #f0f0f0;
+          }
+        }
+      }
+    }
+  }

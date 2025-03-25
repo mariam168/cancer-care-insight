@@ -3,13 +3,14 @@ import yasminImage from '../Assets/yasmin.jpeg';
 import YostenaImage from '../Assets/yostena.jpeg';
 import MariamImage from '../Assets/mariam.jpeg';
 import sohailaImage from '../Assets/sohaila.jpeg';
+import placeholder from '../Assets/placeholder.jfif'
 import '../styles/ContactUs.scss';
 
 export default function ContactUs() {
   return (
-    <div className="ContactUs">
+    <div className="ContactUs primary-color ">
       <h1>Get Support from Our Team</h1>
-      <div className="ContactUsContent">
+      <div className="ContactUsContent secondary-color-bg">
         <a href="https://www.linkedin.com/in/yasmin-gamal-ali-3353a6232?trk=contact-info">
           <div>
             <img src={yasminImage} alt="yasmin" />
@@ -35,11 +36,11 @@ export default function ContactUs() {
           </div>
         </a>
         <div>
-          <img src="/" alt="esraa" />
+          <img src={placeholder} alt="esraa" />
           <h3>Esraa Khamis</h3>
         </div>
         <div>
-          <img src="/" alt="aya" />
+          <img src={placeholder} alt="aya" />
           <h3>Aya Ahmed</h3>
         </div>
       </div>

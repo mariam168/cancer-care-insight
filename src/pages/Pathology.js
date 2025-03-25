@@ -59,8 +59,8 @@ export default function Pathology() {
   return (
    
       <div>
-        <form className="modelPage" onSubmit={handleSubmit}>
-          <h2>Pathology Analysis</h2>
+        <form className="modelPage secondary-color-bg  " onSubmit={handleSubmit}>
+          <h3>Pathology Analysis</h3>
   
           <div className="pathologyModel">
             <div>
@@ -108,7 +108,7 @@ export default function Pathology() {
               />
             </div>
           </div>
-          <button type="submit">Submit</button>
+          <button type="submit" className='primary-color-bg'>Submit</button>
         </form>
         {error && <div style={{ color: 'red' }}>Error: {error}</div>}
       </div>

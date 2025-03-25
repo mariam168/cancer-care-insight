@@ -16,8 +16,8 @@ export default function Negative() {
   };
 
   return (
-    <div className="mammographResult">
-      <h1>Mammograph Result Overview</h1>
+    <div className="mammographResult secondary-color-bg">
+      <h3>Mammograph Result Overview</h3>
       <p>Date of test: {currentDate}</p>
       <p>Result: No Cancer</p>
       <img src={negative} alt="negative" />

@@ -8,7 +8,7 @@ $header-height: 80px;
   top: 0;
   z-index: 50;
   padding: 5px 0;
-  height: $header-height; 
+  height: $header-height;
   z-index: 10;
   display: flex;
   align-items: center;
@@ -24,17 +24,53 @@ $header-height: 80px;
 .buttonPrimary {
   padding: 5px 10px;
   font-size: 14px;
-  height: 32px;
-  width: 90px;
+  height: 38px;
+  width: fit-content;
   color: white;
   background-color: $primary-color !important;
   border-radius: 3px;
   transition: all 0.3s ease;
-  border: none; 
+  border: none;
+  display: inline-block;
 
   &:hover {
     color: $primary-color !important;
     background-color: white !important;
     border: 2px solid $primary-color !important;
+  }
+}
+
+@media (max-width: 990px) {
+  .header {
+    height: auto;
+    padding: 10px 20px;
+  }
+  Container {
+    width: 100%;
+    margin-top: 0;
+  }
+  .logoImage {
+    width: 150px;
+  }
+
+  .navbar-collapse {
+    position: absolute ;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 5px 10px;
   }
 }

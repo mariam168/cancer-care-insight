@@ -1,30 +1,38 @@
 $primary-color: hsl(202.67deg 53.82% 59.39%);
-$light-gray: rgb(163, 154, 154);
+$light-gray: rgb(153, 146, 146);
 $dark-gray: rgb(100, 99, 99);
 $light-bg: #ECEFF1;
-
+.secondary-color-bg{
+  background-color: #e8edf1!important;
+}
+.primary-color-bg{
+  background-color: #4c6fa3 !important;
+}
 .modelPage {
-  background-color: $light-bg;
-  padding: 2rem;
+ 
+  padding: 1.3rem;
   width: 45%;
-  margin: 3rem auto;
+  margin: 2rem auto;
   box-shadow: 0 0.125rem 0.25rem rgba(158, 157, 157, 0.7);
-  border-radius: 0.5rem;
+ 
 
-  h2 {
+  h3 {
     text-align: center;
     margin-bottom: 1.5rem;
+    color: $dark-gray;
+    
   }
 
   p {
     text-align: center;
+   
   }
 
   .drag {
-    height: 15rem;
+    height: 17rem;
     background-color: white;
     margin: 1rem auto;
-    box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.014);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,12 +55,14 @@ $light-bg: #ECEFF1;
       flex-direction: column;
 
       label {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.3rem;
+        color: $light-gray;
       }
 
       input[type="number"] {
         padding: 0.5rem;
-        border: 1px solid $light-gray;
+       border: none;
+       box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.034);
         border-radius: 0.25rem;
         width: 100%;
         box-sizing: border-box;
@@ -71,16 +81,16 @@ $light-bg: #ECEFF1;
     justify-content: center;
 
     img {
-      width: 15rem;
-      height: 10rem;
+      width: 25rem;
+      height: 8rem;
       margin: 1rem;
     }
   }
 
   button[type="submit"] {
-    width: 74%;
+    width: 100%;
     height: 2.5rem;
-    background-color: white;
+    color: white;
     border: none;
     box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.7);
     border-radius: 0.3125rem;
@@ -94,4 +104,16 @@ $light-bg: #ECEFF1;
     }
   }
 
+}
+@media (max-width: 1000px) and (min-width: 768px) {
+  .modelPage {
+    width: 60%;
+  }
+  
+}
+@media (max-width: 768px) {
+  .modelPage {
+    width: 80%;
+  }
+  
 }

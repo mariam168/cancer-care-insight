@@ -1,5 +1,10 @@
 $light-bg: #ECEFF1;
-
+.primary-color{
+  color: #4c6fa3  !important;
+}
+.secondary-color-bg{
+  background-color: #e8edf1!important;
+}
 .ContactUs {
   display: flex;
   flex-direction: column;
@@ -19,7 +24,7 @@ $light-bg: #ECEFF1;
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 1200px; // Adjust as needed
+    max-width: 1200px; 
     padding: 1rem;
 
     a,
@@ -31,7 +36,7 @@ $light-bg: #ECEFF1;
       display: flex;
       flex-direction: column;
       align-items: center;
-      text-decoration: none; // Remove default link styling
+      text-decoration: none; 
 
       img {
         width: 200px;
@@ -41,6 +46,7 @@ $light-bg: #ECEFF1;
 
       h3 {
         margin: 0.5rem 0;
+        font-size: 1rem;
         color: black;
       }
     }

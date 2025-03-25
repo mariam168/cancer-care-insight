@@ -10,13 +10,12 @@ import Negative from "../pages/Negative";
 import Doctors from "../pages/Doctors";
 import Patients from "../pages/Patients";
 import Dashboard from "../pages/Dashboard";
-import PathologyResult from "../pages/PathologyResult";
 import ContactUs from "../pages/ContactUs";
 import AboutUs from "../pages/AboutUs";
 
 const Layout = () => {
   const location = useLocation();
-  const hideHeaderRoutes = ["/SignUp", "/SignIn"].map((route) => route.toLowerCase());
+  const hideHeaderRoutes = ["/SignUp", "/SignIn" ,"/Dashboard"].map((route) => route.toLowerCase());
   return (
     <>
       {!hideHeaderRoutes.includes(location.pathname) && <Header />}
@@ -31,7 +30,7 @@ const Layout = () => {
         <Route path="/Doctors" element={<Doctors />} />
         <Route path="/Patients" element={<Patients />} />
         <Route path="/Dashboard" element={<Dashboard />} />
-        <Route path="/PathologyResult" element={<PathologyResult />} />
+      
         <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/AboutUs" element={<AboutUs />} />
       </Routes>

@@ -17,8 +17,8 @@ export default function Positive() {
 
   return (
 
-        <div className="mammographResult">
-          <h1>Mammograph Result Overview</h1>
+        <div className="mammographResult secondary-color-bg">
+          <h3>Mammograph Result Overview</h3>
           <p>Date of test: {currentDate}</p>
           <p>Result: Cancer</p>
           <img src={positive} alt="positive" />

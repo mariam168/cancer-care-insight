@@ -1,6 +1,12 @@
 .primary-color{
     color: #4c6fa3  !important;
 }
+.primary-color-bg{
+  background-color: #4c6fa3 !important;
+}
+.secondary-color-bg{
+  background-color: #e8edf1!important;
+}
 .custom-background {
   position: relative;
   padding: 3rem 1rem;
@@ -12,7 +18,7 @@
     left: 0;
     width: 100%;
     height: calc(100% - 100px);
-    background: #f8f9fa; 
+    background: #e8edf1; 
     z-index: -1; 
     border-radius: 20px;
   }
@@ -64,4 +70,66 @@
       border: 2px solid #4c6fa3 !important;
     }
   }
+  .responsive-title {
+    font-size: 2.5rem; 
+  }
+  .responsive-small-title{
+    font-size: 1.5rem;
+  }
+  .home-models-width{
+    width: 90%;
+    
+   
+  }
   
+  .section-titles{
+    font-size: 2rem;
+  }
+  .section-small-titles{
+    font-size: 0.9rem ;
+  }
+  
+  
+  @media (max-width: 1200px) and (min-width: 1058px) {
+    .responsive-title {
+      font-size: 2rem !important; 
+    }
+  }
+  
+  @media(max-width: 1058px) and (min-width: 845px) {
+    .responsive-title {
+      font-size: 1.5rem !important; 
+    }
+    .responsive-small-title{
+      font-size: 1.2rem;
+    }
+
+  }
+  @media(max-width: 850px) and (min-width: 768px) {
+    .responsive-title {
+      font-size: 1.2rem !important; 
+    }
+    .responsive-small-title{
+      font-size: 1rem !important;
+    }
+  }
+  
+  @media(max-width: 885px) and (min-width: 768px) {
+    .home-models-width{
+      width: 100%;
+    }
+   
+  }
+  @media (max-width: 992px) and (min-width:768px){
+    .section-titles{
+      font-size: 1.7rem;
+    }
+    .section-small-titles{
+      font-size: 0.1rem;
+    }
+  }
+  @media (max-width: 768px){
+    .section-titles{
+      font-size: 1.3rem;
+    }
+  }

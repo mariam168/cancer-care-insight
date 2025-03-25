@@ -8,6 +8,7 @@ export default function Mammograph() {
   const [files, setFiles] = useState([]);
   const navigate = useNavigate();
 
+
   const onDrop = (acceptedFiles) => {
     const validFiles = acceptedFiles.filter(file => {
       const validMimeTypes = ["image/jpeg", "image/png", "image/gif"];
@@ -73,9 +74,18 @@ export default function Mammograph() {
   
 
   return (
-    <form className="modelPage" onSubmit={handleSubmit}>
-      <h2>Mammograph Analysis</h2>
+    <form className="modelPage secondary-color-bg" onSubmit={handleSubmit}>
+      <h3>Mammograph Analysis</h3>
       <div {...getRootProps()} className={`drag ${isDragActive ? "active" : ""}`}>
+      <div className="dropped-images">
+          {files.map((file, index) => (
+            <img
+              key={index}
+              src={URL.createObjectURL(file)}
+              alt={`Uploaded Image ${index + 1}`}
+            />
+          ))}
+        </div>
         <input {...getInputProps()} />
         <div className="modelPageContent">
           {isDragActive ? (
@@ -91,17 +101,9 @@ export default function Mammograph() {
           )}
           <p style={{ fontSize: "15px" }}>Supported formats: JPEG, PNG, JPG, GIF</p>
         </div>
-        <div className="dropped-images">
-          {files.map((file, index) => (
-            <img
-              key={index}
-              src={URL.createObjectURL(file)}
-              alt={`Uploaded Image ${index + 1}`}
-            />
-          ))}
-        </div>
+      
       </div>
-      <button type="submit">Submit</button>
+      <button type="submit" className='primary-color-bg'>Submit</button>
     </form>
 
   );
