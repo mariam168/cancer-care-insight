@@ -15,7 +15,7 @@ import AboutUs from "../pages/AboutUs";
 
 const Layout = () => {
   const location = useLocation();
-  const hideHeaderRoutes = ["/SignUp", "/SignIn" ,"/Dashboard"].map((route) => route.toLowerCase());
+  const hideHeaderRoutes = ["/SignUp", "/SignIn" ,"/Dashboard","/Doctors","/Patients"].map((route) => route.toLowerCase());
   return (
     <>
       {!hideHeaderRoutes.includes(location.pathname) && <Header />}

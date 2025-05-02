@@ -1,19 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import add from '../Assets/add.png';
-import home_icon from '../Assets/home_icon.png';
-import dashboard_icon from '../Assets/dashboard_icon.png';
-import mammograph_icon from '../Assets/mammograph_icon.png';
-import pathology_icon from '../Assets/pathology_icon.png';
-import patient_icon from '../Assets/patient_icon.png';
-import doctor_icon from '../Assets/doctor_icon.png';
+import SideBar from '../components/SideBar/SideBar';
 import profile2 from '../Assets/profile2.jpg';
 import '../styles/Profiles.scss';
-import doctorsData from './Data'; // استيراد البيانات من Data.js
+import doctorsData from './Data'; 
 
 const Users = () => {
   const [searchQuery, setSearchQuery] = useState("");
-  const [doctors, setDoctors] = useState(doctorsData); // استخدام البيانات المستوردة
+  const [doctors, setDoctors] = useState(doctorsData); 
 
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
@@ -25,46 +20,7 @@ const Users = () => {
 
   return (
     <div className="profiles">
-      <aside className="aside_nav">
-        <ul>
-          <li>
-            <Link to="/">
-              <img src={home_icon} alt="Home" />
-              <h3>Home</h3>
-            </Link>
-          </li>
-          <li>
-            <Link to="/Dashboard">
-              <img src={dashboard_icon} alt="Dashboard" />
-              <h3>Dashboard</h3>
-            </Link>
-          </li>
-          <li>
-            <Link to="/Patients">
-              <img src={patient_icon} alt="Patients" />
-              <h3>Patients</h3>
-            </Link>
-          </li>
-          <li>
-            <Link to="/Doctors">
-              <img src={doctor_icon} alt="Doctors" />
-              <h3>Doctors</h3>
-            </Link>
-          </li>
-          <li>
-            <Link to="/mammograph">
-              <img src={mammograph_icon} alt="Mammograph" />
-              <h3>Mammograph</h3>
-            </Link>
-          </li>
-          <li>
-            <Link to="/pathology">
-              <img src={pathology_icon} alt="Pathology" />
-              <h3>Pathology</h3>
-            </Link>
-          </li>
-        </ul>
-      </aside>
+      <SideBar/>
       <div className="profiles_content">
         <div className="profiles_search">
           <input

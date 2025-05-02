@@ -4,7 +4,7 @@ nav {
     box-shadow: 0px 5px 15px rgb(19 3 231 / 10%);
     position:sticky;
     top:0px;
-    background-color: white;
+    background-color: rgb(175, 36, 36);
     z-index: 1000;
     height: 55px;
 

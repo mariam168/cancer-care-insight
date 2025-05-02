@@ -1,16 +1,16 @@
-
 .aside_nav {
     background-color: white;
-   
-
+  
     ul {
       list-style: none;
       padding: 0;
       margin: 0;
       @media (max-width: 768px) {
-        width: 10%;
+        width: auto; // السماح للشريط الجانبي بالتكيف مع محتواه
+        display: flex; // جعل العناصر في الشريط الجانبي في صف واحد
+        justify-content: space-around; // توزيع العناصر بالتساوي
       }
-
+  
       li {
         a {
           display: flex;
@@ -18,21 +18,23 @@
           padding: 0.8rem;
           text-decoration: none;
           color: #333;
-
+  
           img {
             width: 1.5rem;
             margin-right: 0.5rem;
+            @media (max-width: 768px) {
+              margin-right: 0; // إزالة الهامش الأيمن للأيقونات في الشاشات الصغيرة
+            }
           }
-
+  
           h3 {
             margin: 0;
             font-size: 1rem;
-            @media (max-width: 768px) {
+            @media (max-width: 1000px) {
               display: none; 
-              
             }
           }
-
+  
           &:hover {
             background-color: #f0f0f0;
           }
